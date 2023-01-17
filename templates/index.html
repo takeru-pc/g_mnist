@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>機動戦士ガンダム～python discriminate～ガンダムの画像を判別して名前を返すアプリ</title>
+    <link rel="stylesheet" href="./static/stylesheet.css">
+</head>
+<body>
+    <header>   
+        <img style="margin: 5px 40px;" height="50" src="static\logo.png" alt="G-discriminate">
+        <a class="header-logo" href="#">機動戦士ガンダム～python discriminate～ガンダムの画像を判別して名前を返すアプリ</a>
+    </header>
+    <div>
+    <div style="display: flex;flex-wrap: wrap;margin-top: 30px;">
+        
+            <div>
+               <img src="static/GUNDAM_cut/Strike.jpg" width="300" height="300" alt="ストライク">
+            </div>
+            <div>
+               <img src="static/GUNDAM_cut/Freedom.jpg" width="300" height="300" alt="フリーダム">
+            </div>
+            <div>
+               <img src="static/GUNDAM_cut/Impulse.jpg" width="300" height="300" alt="インパルス">
+            </div>
+            <div>
+               <img src="static/GUNDAM_cut/Destiny.jpg" width="300" height="300" alt="デスティニー">
+            </div>
+            <div>
+               <img src="static/GUNDAM_cut/Exia.jpg" width="300" height="300" alt="エクシア">
+            </div>
+            <div>
+               <img src="static/GUNDAM_cut/00.jpg" width="300" height="300" alt="ダブルオー">
+            </div>
+            <div>
+               <img src="static/GUNDAM_cut/Unicorn.jpg" width="300" height="300" alt="ユニコーン">
+            </div>
+            <div>
+               <img src="static/GUNDAM_cut/AGE-1.jpg" width="300" height="300" alt="AGE-1">
+            </div>
+            <div>
+               <img src="static/GUNDAM_cut/Barbatos_Lupus_Rex.jpg" width="300" height="300" alt="バルバトスルプスレクス">
+            </div>
+            <div>
+               <img src="static/GUNDAM_cut/Aerial.jpg" width="300" height="300" alt="エアリアル">
+            </div>
+        
+    </div>
+     
+    <div class="main">    
+        <h2> AIが送信された画像のガンダムを判定します</h2>
+        <p>画像を送信してください</p>
+        <form method="POST" enctype="multipart/form-data">
+            <input class="file_choose" type="file" name="file">
+            <input class="btn" value="submit!" type="submit">
+        </form>
+        <div class="answer">{{answer}}</div>
+    </div>
+    </div>
+    <footer>
+        <img class="footer_img" src="static\logo.png" alt="G-discriminate">
+        <small>&copy; 2023 takeru_kato.</small>   
+    </footer>
+
+</body>
+</html>
